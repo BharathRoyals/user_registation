@@ -3,6 +3,13 @@
 <title>Home</title>
 {% endblock %}
 
+
 {% block body_block %}
+
 <h1>Welcome To Home pages</h1>
+{% if username %}
+<h1>welcome to home page Mr{{username}}</h1>
+{% else %}
+<h1>Welcome to Home Page</h1>
+{% endif %}
 {% endblock %}
