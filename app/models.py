@@ -9,3 +9,7 @@ class profile(models.Model):
     username=models.OneToOneField(User,on_delete=models.CASCADE)
     Address=models.TextField()
     profile_pic=models.ImageField(upload_to='pi')
+
+    def __str__(self):
+
+        return self.Address
